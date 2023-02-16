@@ -44,7 +44,7 @@ export default class Candle {
 
             if (this.open > this.close) {
                 this.color = CandleColor.RED
-            } else if (this.close > this.open) {
+            } else if (this.close >= this.open) {
                 this.color = CandleColor.GREEN
             }
         }
